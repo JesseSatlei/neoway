@@ -3,7 +3,7 @@ import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 @Entity()
 export class User {
 
-    constructor(cpf: string, privado: number, incomplete: number, dateLastOrder: Date, averageTicket: number, ticketLastOrder: number, storeCurrent: string, storeLastOrder: string) {
+    constructor(cpf: string, privado: number, incomplete: number, dateLastOrder: string, averageTicket: number, ticketLastOrder: number, storeCurrent: string, storeLastOrder: string) {
         this.cpf = cpf;
         this.privado = privado;
         this.incomplete = incomplete;
@@ -17,7 +17,7 @@ export class User {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({ nullable: true })
     cpf: string;
 
     @Column()
@@ -26,19 +26,19 @@ export class User {
     @Column()
     incomplete: number;
 
-    @Column()
-    dateLastOrder: Date;
+    @Column({ nullable: true })
+    dateLastOrder: string;
 
-    @Column()
+    @Column({ type: 'decimal', nullable: true })
     averageTicket: number;
 
-    @Column()
+    @Column({ type: 'decimal', nullable: true })
     ticketLastOrder: number;
 
-    @Column()
+    @Column({ nullable: true })
     storeCurrent: string;
 
-    @Column()
+    @Column({ nullable: true })
     storeLastOrder: string;
 
 }
