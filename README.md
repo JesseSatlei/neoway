@@ -1,15 +1,15 @@
 # O que é esse projeto
-Esse é um sistema criado para que possa ser lido uma planilha especifica de clientes e guardado no banco de dados postgres os dados válidos.
+Esse é um sistema utilizado para ler uma planilha de clientes e guardar os dados válidos dessa planilha em um banco de dados postgres.
 
 # O que precisa estar instalado para rodar o projeto
-Node 
-Npm
-Docker
+1. Node 
+2. Npm
+3. Docker
 
-# Comandos para rodar o projeto
+# Passos para rodar o projeto
 1. `npm i` - Esse comando irá instalar as bibliotecas
-2. `ormconfig.json` - Nesse arquivo você pode configurar para que as variaveis para a conexão no banco de dados sejam os mesmos do docker-compose.yml
-3. `npm run dev` - Irá executar o "nodemon" em nosso ambiente para que a atualização do terminal ocorra automaticamente.
+2. `ormconfig.json` - Nesse arquivo você pode configurar os dados que serão utilizados para a conexão com o banco de dados
+3. `npm run dev` - Irá executar o "nodemon" e o projeto em nosso ambiente para que a atualização do terminal ocorra automaticamente.
 4. `docker-compose up -d` - Irá executar o docker e irá baixar a imagem configurada no "docker-compose.yml"
 
 # Rotas
