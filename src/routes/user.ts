@@ -50,7 +50,7 @@ routerUser.post('/', multerConfig.single('file'), async (req, res) => {
         });
 
         // Prepara os dados para ser criado o usuario
-        cpfUser = cpf.isValid(user[0]) ? clearCpfCnpj(user[0]) : '';
+        cpfUser = cpf.isValid(user[0]) ? clearCpfCnpj(user[0]).toString() : '';
         privado = user[1];
         incomplete = user[2];
         dateLastOrder = user[3] != 'NULL' ? new Date(user[3]).getTime().toString() : new Date().getTime().toString();
