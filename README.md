@@ -7,10 +7,10 @@ Esse é um sistema utilizado para ler uma planilha de clientes e guardar os dado
 3. Docker
 
 # Passos para rodar o projeto
-1. `npm i` - Esse comando irá instalar as bibliotecas
-2. `ormconfig.json` - Nesse arquivo você pode configurar os dados que serão utilizados para a conexão com o banco de dados
-3. `npm run dev` - Irá executar o "nodemon" e o projeto em nosso ambiente para que a atualização do terminal ocorra automaticamente.
-4. `docker-compose up -d` - Irá executar o docker e irá baixar a imagem configurada no "docker-compose.yml"
+1. `docker-compose up -d` - Irá executar o docker e irá baixar a imagem configurada no "docker-compose.yml"
+2. `npm i` - Esse comando irá instalar as bibliotecas
+3. `ormconfig.json` - Nesse arquivo você pode configurar os dados que serão utilizados para a conexão com o banco de dados
+4. `npm run dev` - Irá executar o "nodemon" e o projeto em nosso ambiente para que a atualização do terminal ocorra automaticamente.
 
 # Rotas
 localhost:8000/ - Rota padrão para saber se está em pleno funcionamento
